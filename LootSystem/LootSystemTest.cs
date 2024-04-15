@@ -120,7 +120,7 @@ namespace GameLibUnitTest.Lootsystem
             lootSystem.RemoveItemFromBag(bag, potion);
 
             // Assert
-            Assert.IsFalse(bag.ContainsItem(potion), "The potion should have been removed from the bag.");
+            Assert.IsFalse(bag.GetItems().Contains(potion), "The potion should have been removed from the bag.");
         }
 
     }
